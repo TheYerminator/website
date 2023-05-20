@@ -1,4 +1,4 @@
-nav.menu-nav ul li.btn{
+/*nav.menu-nav ul li.btn{
 	list-style-type: none;
 	display: inline-block;
 	text-decoration: none;
@@ -14,7 +14,28 @@ nav.menu-nav ul li.btn:hover a{
 	color: #000;
 	background-color: #fff;
 	transition: 0.8s all;
+}*/
+.menu-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
 }
+
+.menu-nav li {
+  flex: 1;
+  height: 40px; /* Remplacez la valeur par celle souhaitée */
+}
+
+.menu-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
 body{
 	background-color: #fff;
 }
