@@ -54,24 +54,38 @@ header {
 }
 
 
-.#content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
-  grid-gap: 10px; /* Espacement entre les panels */
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 640px;
 }
 
-.panel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+td, th {
+  border: 10px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
   text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
 }
 
-.panel-row {
-  display: flex;
-  flex-wrap: wrap;
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
 }
 
 .panel-item {
